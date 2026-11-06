@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 19px;
+    font-style: italic;
+    margin: 15px 0 10px;
+}
+
+header {
+    background-color: #DCEAF5;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.logo {
+    width: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 15px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+a {
+    color: #325979;
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: red;
+}
+
+a:focus {
+    color: green;
+    outline: 2px solid black;
+}
+
+a:active {
+    color: purple;
+}
+
+#mainnav a {
+    padding: 4px;
+}
+
+#mainnav a:hover,
+#mainnav a:focus {
+    background-color: lightgray;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#about,
+#articles,
+#contact,
+.content {
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    color: #333333;
+    text-align: justify;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 12px 0;
+    text-align: justify;
+}
+
+.content p::first-line {
+    letter-spacing: 2px;
+}
+
+p:lang(en) {
+    font-style: italic;
+    color: #555555;
+}
+
+blockquote {
+    margin: 15px;
+    padding: 10px;
+}
+
+figure {
+    text-align: center;
+    margin: 10px 0;
+}
+
+ol,
+.articles-list,
+.contents-list {
+    padding-left: 30px;
+}
+
+#articles li {
+    padding: 5px;
+}
+
+#articles li:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#articles li:nth-child(even) {
+    background-color: white;
+}
+
+#articles li:nth-child(4) a::before {
+    content: "Важно! ";
+    border: 1px solid black;
+    background-color: rgb(255, 208, 0);
+    color: red;
+    padding: 2px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+main img + p {
+    margin-top: 20px;
+}
+
+.date {
+    font-size: 14px;
+    color: #555555;
+}
+
+dl {
+    line-height: 1.6;
+}
+
+dt {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+.shannon-table {
+    width: 100%;
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+
+.shannon-table caption {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.shannon-table th,
+.shannon-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.shannon-table th {
+    background-color: #dddddd;
+}
+
+.shannon-table tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.shannon-table td:first-child {
+    font-weight: bold;
+}
+
+.shannon-table tbody tr:last-child {
+    background-color: #dddddd;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 15px auto;
+}
+
+.form__item {
+    margin-bottom: 12px;
+}
+
+#contact-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form input[type="tel"], #contact-form input[type="date"], #contact-form select, #contact-form textarea {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid gray;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+#contact-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#contact-form input[type="submit"] {
+    padding: 7px 15px;
+    border: 1px solid black;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: gray;
+    color: white;
+}
+
+.footer-icons img {
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #234a69;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin: 5px;
+}
